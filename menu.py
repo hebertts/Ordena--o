@@ -15,14 +15,14 @@ def Menu():
     menu_principal = PrettyTable(['      OPÇÃO      ', '       ITEM     '])
     menu_principal.align['OPÇÃO'] = 'c'
     menu_principal.align['ITEM'] ='l'
-    menu_principal.add_row(['1','números aleatóios crescente'])
-    menu_principal.add_row(['2','números aleatóios decrescente'])
+    menu_principal.add_row(['1','números aleatórios crescente'])
+    menu_principal.add_row(['2','números aleatórios decrescente'])
     menu_principal.add_row(['3','Seus números crescente'])
     menu_principal.add_row(['4','Seus números decrescente'])
     menu_principal.add_row(['5','Seus nomes Crescente'])
     menu_principal.add_row(['6','Seus nomes descrescente'])
-    menu_principal.add_row(['7','Nomes aletórios crescente'])
-    menu_principal.add_row(['8','Nomes aletórios decrescente'])
+    menu_principal.add_row(['7','Nomes aleatórios crescente'])
+    menu_principal.add_row(['8','Nomes aleatórios decrescente'])
     print(menu_principal)
     print('+'+'-'*51+'+')
     
