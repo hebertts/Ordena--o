@@ -1,0 +1,17 @@
+Tempo total: 0 minutos, 0 segundos, 0.000 milissegundos, 0.000 microssegundos
+Array ordenado 1 a 50
+Tempo total: 0 minutos, 0 segundos, 0.000 milissegundos, 0.000 microssegundos
+Array ordenado 1 a 200
+Tempo total: 0 minutos, 0 segundos, 9.566 milissegundos, 9565.592 microssegundos
+Array ordenado 1 a 500
+Tempo total: 0 minutos, 0 segundos, 59.389 milissegundos, 59389.114 microssegundos
+Array ordenado 1 a 1000
+Tempo total: 0 minutos, 0 segundos, 128.745 milissegundos, 128744.841 microssegundos
+Array ordenado 1 a 2000
+Tempo total: 0 minutos, 2 segundos, 2687.823 milissegundos, 2687823.057 microssegundos
+Array ordenado 1 a 10000
+Tempo total: 0 minutos, 29 segundos, 29362.333 milissegundos, 29362333.298 microssegundos
+Array ordenado 1 a 30000
+Tempo total: 1 minutos, 46 segundos, 106824.669 milissegundos, 106824668.646 microssegundos
+Array ordenado 1 a 60000
+Tempo total: 0 minutos, 0 segundos, 0.000 milissegundos, 0.000 microssegundos

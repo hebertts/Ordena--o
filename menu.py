@@ -30,23 +30,21 @@ def Menu():
     if choice == 7:
         arr_str = []
         number_max = int(input('Digite a quantidade máxima desejada: '))
-        arr = list(range(1,number_max+1))
-        for _ in range(number_max+1):
+        for _ in range(number_max):
             arr_str.append(names.get_full_name())
         print(f'Sua lista contém {number_max} nomes aleatórios')
         print('\n')   
         sort.ascending_order(arr_str)
-        print_decorated_list('Crescente',arr_str,choice)
+        print_decorated_list('Crescente',arr_str)
     if choice == 8:
         arr_str = []
         number_max = int(input('Digite a quantidade máxima desejada: '))
-        arr = list(range(1,number_max+1))
         for _ in range(number_max):
             arr_str.append(names.get_full_name())
         print(f'Sua lista contém {number_max} nomes aleatórios')
         print('\n')
         sort.descending_order(arr_str)
-        print_decorated_list('Decrescente',arr_str,choice)
+        print_decorated_list('Decrescente',arr_str)
     if choice == 1:
         number_max = int(input('Digite a quantidade máxima desejada: '))
         arr = list(range(1,number_max+1))
@@ -54,7 +52,7 @@ def Menu():
         print(f'Sua lista: vai de 1 a {number_max} aleatoriamente: ')
         print('\n')
         sort.ascending_order(arr)
-        print_decorated_list('Crescente',arr,choice)
+        print_decorated_list('Crescente',arr)
     if choice == 2:
         number_max = int(input('Digite a quantidade máxima desejada: '))
         arr = list(range(1,number_max+1))
@@ -62,34 +60,34 @@ def Menu():
         print(f'Sua lista: vai de 1 a {number_max} aleatoriamente: ')
         print('\n')
         sort.descending_order(arr)
-        print_decorated_list('Decrescente',arr,choice)
+        print_decorated_list('Decrescente',arr)
     if choice == 3:
         arr = list(map(int,input("Digite seus números separados por vírgula: ").split(',')))
         print(f'Sua lista: '+', '.join(map(str, arr)))
         print('\n')
         sort.ascending_order(arr)
-        print_decorated_list('Crescente',arr,choice)
+        print_decorated_list('Crescente',arr)
     if choice == 4:
         arr = list(map(int,input("Digite seus números separados por vírgula: ").split(',')))
         print(f'Sua lista ordenada:')
         print('\n')
         sort.descending_order(arr)
-        print_decorated_list('Decrescente',arr,choice)
+        print_decorated_list('Decrescente',arr)
     if choice == 5:
         arr = list(map(str,input("Digite nomes separados por vírgula: ").split(',')))
         print(f'Sua lista ordenada:')
         print('\n')
         sort.ascending_order(arr)
-        print_decorated_list('Crescente',arr,choice)
+        print_decorated_list('Crescente',arr)
     if choice == 6:
         arr = list(map(str,input("Digite nomes separados por vírgula: ").split(',')))
         print(f'Sua lista ordenada:')
         print('\n')
         sort.descending_order(arr)
-        print_decorated_list('decrescente',arr,choice)
+        print_decorated_list('decrescente',arr)
 from prettytable import PrettyTable
 
-def print_decorated_list(title, ordered_list, choice):
+def print_decorated_list(title, ordered_list):
     max_length = max(len(str(item)) for item in ordered_list) + 4
     num_columns = 7  # Número de colunas desejado
 

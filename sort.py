@@ -1,4 +1,7 @@
 from time import time
+
+file_path = "resultados.txt"  # Caminho do arquivo onde os resultados serão armazenados
+
 def ascending_order(arr):
     start = time()
     for i in range(len(arr)):
@@ -11,10 +14,16 @@ def ascending_order(arr):
     elapsed_time = end - start
     minutes = int(elapsed_time // 60)
     seconds = int(elapsed_time % 60)
-    miliseconds = float((end - start) * 1000)
-    microssegundos = float((end - start) * 1_000_000)
-    print(f'Tempo total: {minutes} minutos, {seconds} segundos, {format(miliseconds,"0.3f")} milissegundos, {format(microssegundos,"0.3f")} microssegundos')
-
+    milliseconds = float((end - start) * 1000)
+    microseconds = float((end - start) * 1_000_000)
+    print(f'Tempo total: {minutes} minutos, {seconds} segundos, {format(milliseconds,"0.3f")} milissegundos, {format(microseconds,"0.3f")} microssegundos')
+    with open(file_path, "a") as file:
+        file.write(f'Tempo total: {minutes} minutos, {seconds} segundos, {format(milliseconds,"0.3f")} milissegundos, {format(microseconds,"0.3f")} microssegundos\n')
+        if isinstance(arr[i],str):
+            file.write(f'Array ordenado possui {len(arr)} nomes\n')
+        else:
+            file.write(f'Array ordenado 1 a {max(arr)}\n')
+        file.close()
 
 def descending_order(arr):
     start = time()
@@ -25,11 +34,19 @@ def descending_order(arr):
             if arr[j] > arr[index_max]:
                 index_max = j
         arr[i], arr[index_max] = arr[index_max], arr[i]
+    '''arr = sorted(arr, reverse=True)'''
     end = time()
     elapsed_time = end - start
     minutes = int(elapsed_time // 60)
     seconds = int(elapsed_time % 60)
-    miliseconds = float((end - start) * 1000)
-    microssegundos = float((end - start) * 1_000_000)
-    print(f'Tempo total: {minutes} minutos, {seconds} segundos, {format(miliseconds,"0.3f")} milissegundos, {format(microssegundos,"0.3f")} microssegundos')
+    milliseconds = float((end - start) * 1000)
+    microseconds = float((end - start) * 1_000_000)
+    print(f'Tempo total: {minutes} minutos, {seconds} segundos, {format(milliseconds,"0.3f")} milissegundos, {format(microseconds,"0.3f")} microssegundos')
 
+    with open(file_path, "a") as file:
+            file.write(f'Tempo total: {minutes} minutos, {seconds} segundos, {format(milliseconds,"0.3f")} milissegundos, {format(microseconds,"0.3f")} microssegundos\n')
+            if isinstance(arr[i],str):
+                file.write(f'Array ordenado possui {len(arr)} nomes\n')
+            else:
+                file.write(f'Array ordenado 1 a {len(arr)}\n')
+                file.close()
