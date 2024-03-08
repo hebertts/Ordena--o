@@ -1,7 +1,7 @@
-# Sort Visualization ![alt text](image-5.png)
+# 📘 Sort Visualization
 Documentação referente a aplicação *sort_visualizatiton.py*. Com o intuito de mostrar como  algoritmo de ordenação Selection Sort funciona e como ele faz para ordenar os dados de forma cresente ou decrescente, utilizando a biblioteca matplotlib para mostrar visualmente como o algoritmo seleciona os dados. 
 
-# Importações ![alt text](image-4.png)
+# 🛑 Importações
 | Library | Description |
 | --- | --- |
 | `matplotlib` | Criar gráficos e visualizações *estáticas, interativas e animadas* |
@@ -10,8 +10,7 @@ Documentação referente a aplicação *sort_visualizatiton.py*. Com o intuito d
 
 Para utilizar o matplotlib é necessário fazer o **pip install matplotlib**
 
-# Código  ![alt text](image-6.png)
-
+# 👨‍🏫 Código
 **Main:**
 
 Para verificar se o script está sendo executado diretamente como o programa principal ou se está sendo importado como um módulo em outro script.
