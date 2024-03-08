@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
-import random
 import time
 
 def selection_sort(data):
@@ -78,8 +77,7 @@ def selection_sort_visualization(data):
 # Verifica se este script está sendo executado como o programa principal
 if __name__ == "__main__":
     # Gera uma lista de números aleatórios para ordenar
-    data = list(range(1, 30))
-    random.shuffle(data)
-    
+    data = np.random.randint(10,300,size=30)
+
     # Chama a função de visualização do selection sort
     selection_sort_visualization(data)

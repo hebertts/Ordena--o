@@ -1,7 +1,7 @@
 import random
 import os
 from prettytable import PrettyTable
-import sort
+import Testes.sort as sort
 
 import names
 
