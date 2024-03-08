@@ -4,11 +4,11 @@ Documentação referente a aplicação *sort_visualizatiton.py*. Com o intuito d
 # 🛑 Importações
 | Library | Description |
 | --- | --- |
-| `matplotlib` | Criar gráficos e visualizações *estáticas, interativas e animadas* |
-| `numpy` | Fornece suporte para **arrays** multidimensionais e funções matemáticas |
-| `time` | Fornece funções para acessar e manipular informações sobre o tempo |
+| `matplotlib` | Criar gráficos e visualizações *interativas e animadas*. |
+| `numpy` | Fornece suporte para **arrays** multidimensionais e funções matemáticas. |
+| `time` | Fornece funções para acessar e manipular informações sobre o tempo. |
 
-Para utilizar o matplotlib é necessário fazer o **pip install matplotlib**
+Para utilizar o matplotlib é necessário fazer o **pip install matplotlib**.
 
 # 👨‍🏫 Código
 **Main:**
@@ -31,7 +31,7 @@ Criação de uma matriz de posições x para as barras com o mesmo comprimento d
 
     x = np.arange(n)
 
-Criação de barras usando as posiçoes especificadas, o tamanho dessas barras será de acordo com a array, são os dados que vamos querer visualizar, `ax.bar` método usado para criar as barras em gráfico
+Criação de barras usando as posições especificadas, o tamanho dessas barras será de acordo com a array, são os dados que vamos querer visualizar, `ax.bar` método usado para criar as barras em gráfico
 
     bars = ax.bar(posições da barra, altura das barras, alinhamento a esqueda(align='edge'))
    
@@ -45,7 +45,7 @@ Essa linha é necessária para atualizar nossas barras posteriormente conforme n
 * rect for rect in bars: Retorna a referência para cada objeto retangular na lista bars.
 
 
-Adiciona um texto para exibir o tempo decorrido
+Adiciona um texto para exibir o tempo transcorrido
 
     timer_text = ax.text(largura, altura, texto desejado, coordenadas para posicionar o texto, ha=alinhamento do texto)
 
@@ -85,7 +85,7 @@ Essencialmente, essa função permite iterar sobre o processo de ordenação do 
     for i in range(n):
         min_index = i
         for j in range(i+1, n): 
-            if data[j] < data[min_index]: atual
+            if data[j] < data[min_index]: 
                 min_index = j 
             yield data, i, j, min_index, time.time() - start_time 
         data[i], data[min_index] = data[min_index], data[i]
